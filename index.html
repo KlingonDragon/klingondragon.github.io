@@ -1,1 +1,131 @@
-Hello World
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>KlingonDragon</title>
+        <link rel="shortcut icon" href="https://avatars.githubusercontent.com/u/18738212?v=4" />
+        <base target="_blank"/>
+        <style>
+/* Default Element Styling */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: sans-serif;
+}
+a {
+    color: inherit;
+    text-decoration: underline;
+    font-family: monospace;
+}
+img {
+    object-fit: contain;
+}
+
+/* Page Layout */
+html, header, footer {
+    background: black;
+    color: white;
+}
+header, footer {
+    padding: 0.25em;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    height: 100vh;
+}
+main {
+    flex: 1 1 100vh;
+    width: clamp(800px, 100%, 1200px);
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    padding: 1em;
+}
+main > * {
+    margin: 1em;
+}
+main > * {
+    padding: 0.5em;
+    background: white;
+    color: black;
+    border-radius: 3em;
+}
+main > * > * {
+    margin: 0.5em;
+}
+main > aside {
+    flex: 2 2 20vw;
+    padding: 0.5em;
+}
+main > aside > * {
+    margin: 0.5em;
+}
+main > aside > img.profile {
+    border-radius: 3em;
+    max-width: 300px;
+}
+main > section {
+    flex: 8 8 80vw;
+    align-self: stretch;
+}
+@media (prefers-color-scheme: light) {
+    html, header, footer {
+        background: white;
+        color: black;
+    }
+    main > aside, main > section {
+        background: silver;
+    }
+}
+menu * {
+    text-align: left;
+}
+details {
+    margin-bottom: 1.2em;
+}
+summary > a.gh {
+    float: right;
+    padding: 6px;
+    border-radius: 12px;
+    background: black;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>KlingonDragon</h1>
+        </header>
+        <nav></nav>
+        <main>
+            <aside id="profile">
+                <h2>Profile</h2>
+                <img class="profile" src="https://avatars.githubusercontent.com/u/18738212?v=4" alt="KlingonDragon's Profile Picture"/>
+                <strong>KlingonDragon</strong>
+            </aside>
+            <section id="content">
+                <h2>KlingonDragon on GitHub</h2>
+                <h3>Projects & Repositories</h3>
+                <menu>
+                    <details>
+                        <summary>
+                            KlingonDragon/mccc-menu
+                            <a class="gh" href="https://github.com/KlingonDragon/mccc-menu">Open on GitHub</a>
+                        </summary>
+                        A replica settings menu for the Sims 4 mod: MC Command Center
+                        <br/>Available at <a href="https://mccc-menu.online">mccc-menu.online</a>
+                    </details>
+                </ul>
+            </section>
+        </main>
+        <footer>&copy; KlingonDragon</footer>
+    </body>
+</html>
