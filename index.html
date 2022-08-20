@@ -73,6 +73,7 @@ main > aside > img.profile {
 main > section {
     flex: 8 8 80vw;
     align-self: stretch;
+    overflow: auto;
 }
 @media (prefers-color-scheme: light) {
     html, header, footer {
@@ -97,6 +98,28 @@ summary > a.gh {
     color: white;
     text-align: center;
     text-decoration: none;
+}
+pre {
+    background: silver;
+    max-width: 100%;
+    overflow-x: auto;
+    padding: 4px;
+    border-radius: 8px;;
+}
+::-webkit-scrollbar, ::-webkit-scrollbar-track, ::-webkit-scrollbar-corner, ::-webkit-scrollbar-thumb {
+    border-radius: 16px;
+    border: 4px solid transparent;
+    width: 16px;
+    height: 16px;
+}
+::-webkit-scrollbar {
+    background: inherit;
+}
+::-webkit-scrollbar, ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 0 1px currentcolor;
+}
+::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 0 16px currentcolor;
 }
         </style>
     </head>
@@ -138,6 +161,15 @@ summary > a.gh {
                         Dashboard to show information about your car and the session on a second screen while playing F1 Games
                         <br/>2021 is the dashboard I made last year. It works but the code isn't great and the app doesn't work with all screen sizes.
                         <br/>I'm creating a new dashboard for 2022 based on this year's game data.
+                    </details>
+                    <details>
+                        <summary>
+                            KlingonDragon/gnome-shell-clock-override-42
+                            <a class="gh" href="https://github.com/KlingonDragon/gnome-shell-clock-override-42">Open on GitHub</a>
+                        </summary>
+                        Fork of <a href="https://github.com/sluedecke/gnome-shell-clock-override">sluedecke/gnome-shell-clock-override</a>, itself a fork of <a href="https://github.com/stuartlangridge/gnome-shell-clock-override">stuartlangridge/gnome-shell-clock-override</a>, to work with GNOME 42.
+                        <br/>Original description:
+                        <pre>Override the Gnome Shell clock with a new time format or text of your choice. Works with new versions of Shell such as 3.18</pre>
                     </details>
                 </ul>
             </section>
